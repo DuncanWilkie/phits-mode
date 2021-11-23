@@ -9,7 +9,7 @@ Example:
 # Install
 To use this, in your init.el you must first set the load path to include the source, and then load the phits-mode.el file:
 ```
-((setq load-path (cons (expand-file-name "/path/to/install/dir") load-path))
-(load "phits-mode")
+(add-to-list 'load-path "path/to/install")
+(require 'phits-mode)
 ```
 Hope to put this on MELPA at some point, preferrably in a little more complete form. 
