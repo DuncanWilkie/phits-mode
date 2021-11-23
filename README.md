@@ -12,4 +12,10 @@ To use this, in your init.el you must first set the load path to include the sou
 (add-to-list 'load-path "path/to/install")
 (require 'phits-mode)
 ```
-Hope to put this on MELPA at some point, preferrably in a little more complete form. 
+I hope to put this on MELPA at some point, preferrably in a little more complete form. 
+
+In order to automatically enter `phits-mode` when opening a `.inp` file, add the following to init.el:
+```
+(add-to-list 'auto-mode-alist '("\\.inp\\'" . phits-mode))
+```
+
