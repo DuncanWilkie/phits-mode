@@ -1,6 +1,6 @@
 ;;; Phits-mode.el --- Summary
 ;;; Commentary:
-;; Manual-copying borrowed from  https://github.com/kbat/mc-tools/blob/master/mctools/phits/phits-mode.el
+
 
 ;;; Code:
 
@@ -28,12 +28,6 @@
     (modify-syntax-entry ?%  "<"  st)
     st)
   "Syntax table used for .inp files.")
-
-
-;;(defun align-to-equals (begin end)
-;;  "Align region to equal signs"
-;;   (interactive "r")
-;;   (align-regexp begin end "\\(\\s-*\\)=" 1 1 ))
 
 
 
@@ -107,7 +101,7 @@
   (setq-local font-lock-defaults `(,phits-font-lock nil t))
   (setq-local indent-line-function #'phits-indent-line))
 
-;; (add-to-list 'auto-mode-alist '(".inp\\'" phits-mode))
+
 
 (provide 'phits-mode)
 
